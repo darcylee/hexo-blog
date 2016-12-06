@@ -1,12 +1,12 @@
 
 <!DOCTYPE html>
-<html lang="null">
+<html lang="zh-cn">
     
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hexo">
-    <title>Archives - Hexo</title>
+    <meta name="generator" content="Gitlee Blog | 李家泉的博客">
+    <title>归档 - Gitlee Blog | 李家泉的博客</title>
     <meta name="author" content="Gitlee">
     
         <meta name="keywords" content="hexo,gitlee,darcylee,blog,gitlee blog,">
@@ -16,11 +16,11 @@
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/hexo-blog/atom.xml">
     
     <meta property="og:type" content="blog">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Gitlee Blog | 李家泉的博客">
 <meta property="og:url" content="http://darcylee.coding.me/hexo-blog/archives/page/2/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Gitlee Blog | 李家泉的博客">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Gitlee Blog | 李家泉的博客">
     
     
         
@@ -46,7 +46,7 @@
 <header id="header" data-behavior="1">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <div class="header-title">
-        <a class="header-title-link" href="/hexo-blog/ ">Hexo</a>
+        <a class="header-title-link" href="/hexo-blog/ ">Gitlee Blog | 李家泉的博客</a>
     </div>
     
         
@@ -70,11 +70,11 @@
         
             <div class="sidebar-profile">
                 <a href="/hexo-blog/#about">
-                    <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/a224ec725a8cdadb58ded94af558aa68?s=110" alt="Author&#39;s picture"/>
+                    <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/a224ec725a8cdadb58ded94af558aa68?s=110" alt="作者的图片"/>
                 </a>
                 <h4 class="sidebar-profile-name">Gitlee</h4>
                 
-                    <h5 class="sidebar-profile-bio"><p>author.bio</p>
+                    <h5 class="sidebar-profile-bio"><p>个人简介11岁的发送的发送地方</p>
 </h5>
                 
             </div>
@@ -90,7 +90,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-                        <span class="sidebar-button-desc">Home</span>
+                        <span class="sidebar-button-desc">首页</span>
                     </a>
             </li>
             
@@ -102,7 +102,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
-                        <span class="sidebar-button-desc">Categories</span>
+                        <span class="sidebar-button-desc">分类</span>
                     </a>
             </li>
             
@@ -114,7 +114,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
-                        <span class="sidebar-button-desc">Tags</span>
+                        <span class="sidebar-button-desc">标签</span>
                     </a>
             </li>
             
@@ -126,7 +126,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
-                        <span class="sidebar-button-desc">Archives</span>
+                        <span class="sidebar-button-desc">归档</span>
                     </a>
             </li>
             
@@ -138,7 +138,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-search"></i>
-                        <span class="sidebar-button-desc">Search</span>
+                        <span class="sidebar-button-desc">搜索</span>
                     </a>
             </li>
             
@@ -150,7 +150,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-                        <span class="sidebar-button-desc">About</span>
+                        <span class="sidebar-button-desc">关于</span>
                     </a>
             </li>
             
@@ -181,7 +181,7 @@
                         <a  class="sidebar-button-link " href="mailto:rucle@gitlee.com" target="_blank">
                     
                         <i class="sidebar-button-icon fa fa-lg fa-envelope-o"></i>
-                        <span class="sidebar-button-desc">Mail</span>
+                        <span class="sidebar-button-desc">邮箱</span>
                     </a>
             </li>
             
@@ -215,25 +215,221 @@
     <section class="postShorten-group main-content-wrap">
     
     
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/hexo-blog/2015/12/01/2015-12-1-objc_实例化/">
+                            Objective－C 实例化
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2015-12-01T12:00:00+08:00">
+	
+		    12月 01, 2015
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <h1 id="类实例化"><a href="#类实例化" class="headerlink" title="类实例化"></a>类实例化</h1><p>类的实例化位导致两个问题：构造函数、析构函数和赋值运算符如何实现，以及如何分配内存。</p>
+<p>在 C++ 中，变量默认是“自动的”：除非被声明为static，否则变量仅在自己的定义块中有意义。动态分配的内存可以一直使用，直到调用了free()或者delete。C++ 中，所有对象都遵循这一规则。</p>
+<p>然而在 Objective-C 中，所有对象都是动态分配的。其实这也是符合逻辑的，因为 C++ 更加 static，而 Objective-C 则更加动态。除非能够在运行时动态分配内存，否则 Objective-C 实现不了这么多动态的特性。</p>
+<h2 id="构造函数和初始化函数"><a href="#构造函数和初始化函数" class="headerlink" title="构造函数和初始化函数"></a>构造函数和初始化函数</h2><h3 id="分配allocation和初始化initialization的区别"><a href="#分配allocation和初始化initialization的区别" class="headerlink" title="分配allocation和初始化initialization的区别"></a>分配<em>allocation</em>和初始化<em>initialization</em>的区别</h3><p>在 <code>C++</code> 中，内存分配和对象初始化都是在构造函数中完成的。在 <code>Objective-C</code> 中，这是两个不同的函数。</p>
+<p>内存分配由类方法 <code>alloc</code> 完成，此时将初始化所有的实例数据。实例数据将被初始化为 <code>0</code>，除了一个名为<code>isa</code>的<code>NSObject</code>的指针。这个指针将在运行时指向对象的实际类型。实例数据根据传入的参数初始化为某一特定的值，这一过程将在一个实例方法 <code>instance method</code> 中完成。这个方法通常命名为<code>init</code>。因此，构造过程被明确地分为两步：内存分配和初始化。<code>alloc</code>消息被发送给类，而<code>init</code>消息则被发送给由<code>alloc</code>创建出来的新的对象。初始化过程不是可选的，<code>alloc</code>之后应该跟着<code>init</code>，之后，父类的init也会被调用，直到<code>NSObject</code>的<code>init</code>方法。这一方法完成了很多重要的工作。</p>
+<p>在 C<code>+</code>+ 中，构造函数的名字是规定好的，必须与类名一致。在 <code>Objective-C</code> 中，初始化方法与普通方法没有什么区别。你可以用任何名字，只不过通常都是选用 <code>init</code> 这个名字。然而，我们还是强烈建议，<strong>初始化方法名字一定要用<code>init</code>或者 <code>init</code> 开头的字符串。</strong></p>
+<h3 id="使用alloc和init"><a href="#使用alloc和init" class="headerlink" title="使用alloc和init"></a>使用<code>alloc</code>和<code>init</code></h3><p>调用<code>alloc</code>之后将返回一个新的对象，并且应该给这个对象发送一个<code>init</code>消息。<code>init</code>调用之后也会返回一个对象。通常，这就是初始化完成的对象。有时候，如果使用单例模式，<code>init</code>可能会返回另外的对象（单例模式要求始终返回同一对象）。因此，<code>init</code>的返回值不应该被忽略。通常，<code>alloc</code>和<code>init</code>都会在一行上。</p>
+<p>c++</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Foo* foo = <span class="keyword">new</span> Foo;</div></pre></td></tr></table></figure>
+<p>Objective-C</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Foo* foo1 = [Foo alloc];</div><div class="line">[foo1 init]; <span class="comment">// 这是不好的行为：应该使用 init 的返回值</span></div><div class="line">Foo* foo2 = [Foo alloc];</div><div class="line">foo2 = [foo2 init]; <span class="comment">// 正确，不过看上去很啰嗦</span></div><div class="line">Foo* foo3 = [[Foo alloc] init]; <span class="comment">// 正确，这才是通常的做法</span></div></pre></td></tr></table></figure>
+<p>为检查内存分配是否成功，C++ 可以判断 new 返回的指针是否是 0（如果使用的是 new(nothrow)运算符）。在 Objective-C 中，检查返回值是否是nil就已经足够了。</p>
+<h3 id="初始化方法的正确示例代码"><a href="#初始化方法的正确示例代码" class="headerlink" title="初始化方法的正确示例代码"></a>初始化方法的正确示例代码</h3><p>一个正确的初始化方法应该有如下特点：</p>
+<ul>
+<li>名字以 init 开始；</li>
+<li>返回能够使用的对象；</li>
+<li>调用父类的 init 方法，直到NSObject的init方法被调用；</li>
+<li>保存[super init…]的返回值；</li>
+<li>处理构造期间出现的任何错误，无论是自己的还是父类的。</li>
+</ul>
+<p>下面一些代码：</p>
+<p>c++</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">class</span> Point2D</div><div class="line">&#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    Point2D(<span class="keyword">int</span> x, <span class="keyword">int</span> y);</div><div class="line"><span class="keyword">private</span>:</div><div class="line">    <span class="keyword">int</span> x;</div><div class="line">    <span class="keyword">int</span> y;</div><div class="line">&#125;;</div><div class="line">Point2D::Point2D(<span class="keyword">int</span> anX, <span class="keyword">int</span> anY) &#123;x = anX; y = anY;&#125;</div><div class="line">...</div><div class="line"></div><div class="line"><span class="function">Point2D  <span class="title">p1</span><span class="params">(<span class="number">3</span>,<span class="number">4</span>)</span></span>;</div><div class="line">Point2D* p2 = <span class="keyword">new</span> Point2D(<span class="number">5</span>, <span class="number">6</span>);</div></pre></td></tr></table></figure>
+<p>Objective-C</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">Point2D</span> : <span class="title">NSObject</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> x;</div><div class="line">    <span class="keyword">int</span> y;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 注意，在 Objective-C 中，id 类似于 void *</span></div><div class="line"><span class="comment">// (id) 就是对象的“一般”类型</span></div><div class="line">-(<span class="keyword">id</span>) initWithX:(<span class="keyword">int</span>)anX andY:(<span class="keyword">int</span>)anY;</div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">Point2D</span></span></div><div class="line"></div><div class="line">-(<span class="keyword">id</span>) initWithX:(<span class="keyword">int</span>)anX andY:(<span class="keyword">int</span>)anY</div><div class="line">&#123;</div><div class="line">    <span class="comment">// 调用父类的初始化方法</span></div><div class="line">    <span class="keyword">if</span> (!(<span class="keyword">self</span> = [<span class="keyword">super</span> init])) <span class="comment">// 如果父类是 NSObject，必须进行 init 操作</span></div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span>; <span class="comment">// 如果父类 init 失败，返回 nil</span></div><div class="line">    <span class="comment">// 父类调用成功，进行自己的初始化操作</span></div><div class="line">    <span class="keyword">self</span>-&gt;x = anX;</div><div class="line">    <span class="keyword">self</span>-&gt;y = anY;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">self</span>; <span class="comment">// 返回指向自己的指针</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line">...</div><div class="line"></div><div class="line">Point2D* p1 = [[Point2D alloc] initWithX:<span class="number">3</span> andY:<span class="number">4</span>];</div></pre></td></tr></table></figure>
+<h2 id="self-super-init…"><a href="#self-super-init…" class="headerlink" title="self = [super init…]"></a>self = [super init…]</h2><p>在上一篇提到的代码中，最不可思议的可能就是这句<code>self = [super init...]</code>。回想一下，self是每个方法的一个隐藏参数，指向当前对象。因此，这是一个局部变量。那么，为什么我们要改变一个局部变量的值呢？事实上，<code>self</code>必须要改变。我们将在下面解释为什么要这样做。</p>
+<p><code>[super init]</code>实际上返回不同于当前对象的另外一个对象。单例模式就是这样一种情况。然而， 有一个 API 可以用一个对象替换新分配的对象。<code>Core Data</code>（<code>Apple</code> 提供的 <code>Cocoa</code> 里面的一个 <code>API</code>）就是用了这种 <code>API</code>，对实例数据做一些特殊的操作，从而让这些数据能够和数据库的字段关联起来。当继承<code>NSManagedObject</code>类的时候，就需要仔细对待这种替换。在这种情形下，<code>self</code>就要指向两个对象：一个是<code>alloc</code>返回的对象，一个是<code>[super init]</code>返回的对象。修改<code>self</code>的值对代码有一定的影响：每次访问实例数据的时候都是隐式的。</p>
+<p>正如下面的代码所示：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">B</span> : <span class="title">A</span></span></div><div class="line">&#123;</div><div class="line"><span class="keyword">int</span> i;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">B</span></span></div><div class="line"></div><div class="line">-(<span class="keyword">id</span>) init</div><div class="line">&#123;</div><div class="line">    <span class="comment">// 此时，self 指向 alloc 返回的值</span></div><div class="line">    <span class="comment">// 假设 A 进行了替换操作，返回一个不同的 self</span></div><div class="line">    <span class="keyword">id</span> newSelf = [<span class="keyword">super</span> init];</div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"%d"</span>, i); <span class="comment">// 输出 self-&gt;i 的值</span></div><div class="line">    <span class="keyword">self</span> = newSelf; <span class="comment">// 有人会认为 i 没有变化</span></div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"%d"</span>, i); <span class="comment">// 事实上，此时的 self-&gt;i, 实际是 newSelf-&gt;i,</span></div><div class="line">                     <span class="comment">// 和之前的值可能不一样了</span></div><div class="line">    <span class="keyword">return</span> <span class="keyword">self</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div><div class="line">...</div><div class="line">B* b = [[B alloc] init];</div></pre></td></tr></table></figure>
+<p><code>self = [super init]</code>简洁明了，也不必担心以后会引入 bug。然而，我们应该注意旧的<code>self</code>指向的对象的命运：它必须被释放。第一规则很简单：谁替换<code>self</code>指针，谁就要负责处理旧的<code>self</code>指针。在这里，也就是<code>[super init]</code>负责完成这一操作。例如，如果你创建<code>NSManagedObject</code>子类（这个类会执行替换操作），你就不必担心旧的<code>self</code>指针。事实上，<code>NSManagedObject</code>的开发者必须考虑这种处理。因此，如果你要创建一个执行替换操作的类，你必须知道如何在初始化过程中释放旧有对象。这种操作同错误处理很类似：如果因为非法参数、不可访问的资源造成构造失败，我们要如何处理？</p>
+<h2 id="初始化错误"><a href="#初始化错误" class="headerlink" title="初始化错误"></a>初始化错误</h2><p>初始化出错可能发生在三个地方：</p>
+<ol>
+<li>调用[super init…]之前：如果构造函数参数非法，那么初始化应该立即停止；</li>
+<li>调用[super init…]期间：如果父类调用失败，那么当前的初始化操作也应该停止；</li>
+<li>调用[super init…]之后：例如资源分配失败等。</li>
+</ol>
+<p>在上面每一种情形中，只要失败，就应该返回<code>nil</code>；相应的处理应该由发生错误的对象去完成。这里，我们主要关心的是1, 3情况。要释放当前对象，我们调用<code>[self release]</code>即可。</p>
+<p>在调用<code>dealloc</code>之后，对象的析构才算完成。因此，<code>dealloc</code>的实现必须同初始化方法兼容。事实上，<code>alloc</code>将所有的实例数据初始化成 <code>0</code> 是相当有用的。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">A</span> : <span class="title">NSObject</span> </span>&#123;</div><div class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> n;</div><div class="line">&#125;</div><div class="line"></div><div class="line">-(<span class="keyword">id</span>) initWithN:(<span class="keyword">unsigned</span> <span class="keyword">int</span>)value;</div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">A</span></span></div><div class="line"></div><div class="line">-(<span class="keyword">id</span>) initWithN:(<span class="keyword">unsigned</span> <span class="keyword">int</span>)value</div><div class="line">&#123;</div><div class="line">    <span class="comment">// 第一种情况：参数合法吗？</span></div><div class="line">    <span class="keyword">if</span> (value == <span class="number">0</span>) <span class="comment">// 我们需要一个正值</span></div><div class="line">    &#123;</div><div class="line">        [<span class="keyword">self</span> release];</div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">// 第二种情况：父类调用成功吗？</span></div><div class="line">    <span class="keyword">if</span> (!(<span class="keyword">self</span> = [<span class="keyword">super</span> init])) <span class="comment">// 即是 self 被替换，它也是父类</span></div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span>; <span class="comment">// 错误发生时，谁负责释放 self？</span></div><div class="line">    <span class="comment">// 第三种情况：初始化能够完成吗？</span></div><div class="line">    n = (<span class="keyword">int</span>)log(value);</div><div class="line">    <span class="keyword">void</span>* p = malloc(n); <span class="comment">// 尝试分配资源</span></div><div class="line">    <span class="keyword">if</span> (!p) <span class="comment">// 如果分配失败，我们希望发生错误</span></div><div class="line">    &#123;</div><div class="line">        [<span class="keyword">self</span> release];</div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">@end</span><span class="class"><span class="keyword">@interface</span> <span class="title">A</span> : <span class="title">NSObject</span> </span>&#123;</div><div class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> n;</div><div class="line">&#125;</div><div class="line"></div><div class="line">-(<span class="keyword">id</span>) initWithN:(<span class="keyword">unsigned</span> <span class="keyword">int</span>)value;</div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">A</span></span></div><div class="line"></div><div class="line">-(<span class="keyword">id</span>) initWithN:(<span class="keyword">unsigned</span> <span class="keyword">int</span>)value</div><div class="line">&#123;</div><div class="line">    <span class="comment">// 第一种情况：参数合法吗？</span></div><div class="line">    <span class="keyword">if</span> (value == <span class="number">0</span>) <span class="comment">// 我们需要一个正值</span></div><div class="line">    &#123;</div><div class="line">        [<span class="keyword">self</span> release];</div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">// 第二种情况：父类调用成功吗？</span></div><div class="line">    <span class="keyword">if</span> (!(<span class="keyword">self</span> = [<span class="keyword">super</span> init])) <span class="comment">// 即是 self 被替换，它也是父类</span></div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span>; <span class="comment">// 错误发生时，谁负责释放 self？</span></div><div class="line">    <span class="comment">// 第三种情况：初始化能够完成吗？</span></div><div class="line">    n = (<span class="keyword">int</span>)log(value);</div><div class="line">    <span class="keyword">void</span>* p = malloc(n); <span class="comment">// 尝试分配资源</span></div><div class="line">    <span class="keyword">if</span> (!p) <span class="comment">// 如果分配失败，我们希望发生错误</span></div><div class="line">    &#123;</div><div class="line">        [<span class="keyword">self</span> release];</div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">@end</span></div></pre></td></tr></table></figure>
+<h2 id="将构造过程合并为alloc-init"><a href="#将构造过程合并为alloc-init" class="headerlink" title="将构造过程合并为alloc+init"></a>将构造过程合并为alloc+init</h2><p>有时候，alloc和init被分割成两个部分显得很罗嗦。幸运的是，我们也可以将其合并在一起。这主要牵扯到 Objective-C 的内存管理机制。简单来说，作为一个构造函数，它的名字必须以类名开头，其行为类似init，但要自己实现alloc。然而，这个对象需要注册到autorelease池中，除非发送retain消息，否则其生命周期是有限制的。以下即是示例代码：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 啰嗦的写法</span></div><div class="line"><span class="built_in">NSNumber</span>* tmp1 = [[<span class="built_in">NSNumber</span> alloc] initWithFloat:<span class="number">0.0</span>f];</div><div class="line">...</div><div class="line">[tmp1 release];</div><div class="line"><span class="comment">// 简洁一些</span></div><div class="line"><span class="built_in">NSNumber</span>* tmp2 = [<span class="built_in">NSNumber</span> numberWithFloat:<span class="number">0.0</span>f];</div><div class="line">...</div><div class="line"><span class="comment">// 无需调用 release</span></div></pre></td></tr></table></figure>
+<h2 id="默认构造函数：指定初始化函数"><a href="#默认构造函数：指定初始化函数" class="headerlink" title="默认构造函数：指定初始化函数"></a>默认构造函数：指定初始化函数</h2><p>在 <code>Objective-C</code> 中，默认构造函数没有实在的意义，因为所有对象都是动态分配内存，也就是说，构造函数都是确定的。但是，一个常用的构造函数确实可以精简代码。事实上，一个正确的初始化过程通常类似于：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (!(<span class="keyword">self</span> = [<span class="keyword">super</span> init])) <span class="comment">// "init" 或其他父类恰当的函数</span></div><div class="line">    <span class="keyword">return</span> <span class="literal">nil</span>;</div><div class="line"><span class="comment">// 父类初始化成功，继续其他操作……</span></div><div class="line"><span class="keyword">return</span> <span class="keyword">self</span>;</div></pre></td></tr></table></figure>
+<p>剪贴复制代码是一个不良习惯。好的做法是，将共同代码放到一个独立的函数中，通常称为“指定初始化函数”。通常这种指定初始化函数会包含很多参数，因为 <code>Objective-C</code> 不允许参数有默认值。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">-(<span class="keyword">id</span>) initWithX:(<span class="keyword">int</span>)x</div><div class="line">&#123;</div><div class="line">    <span class="keyword">return</span> [<span class="keyword">self</span> initWithX:x andY:<span class="number">0</span> andZ:<span class="number">0</span>];</div><div class="line">&#125;</div><div class="line"></div><div class="line">-(<span class="keyword">id</span>) initWithX:(<span class="keyword">int</span>)x andY:(<span class="keyword">int</span>)y</div><div class="line">&#123;</div><div class="line">    <span class="keyword">return</span> [<span class="keyword">self</span> initWithX:x andY:y andZ:<span class="number">0</span>];</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 指定初始化函数</span></div><div class="line">-(<span class="keyword">id</span>) initWithX:(<span class="keyword">int</span>)x andY:(<span class="keyword">int</span>)y andZ:(<span class="keyword">int</span>)z</div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span> (!(<span class="keyword">self</span> = [<span class="keyword">super</span> init]))</div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span>;</div><div class="line">    <span class="keyword">self</span>-&gt;x = x;</div><div class="line">    <span class="keyword">self</span>-&gt;y = y;</div><div class="line">    <span class="keyword">self</span>-&gt;z = z;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">self</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>如果指定初始化函数没有最大数量的参数，那基本上就没什么用处：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 以下代码就有很多重复部分</span></div><div class="line">-(<span class="keyword">id</span>) initWithX:(<span class="keyword">int</span>)x <span class="comment">// 指定初始化函数</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span> (!(<span class="keyword">self</span> = [<span class="keyword">super</span> init]))</div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span>;</div><div class="line">    <span class="keyword">self</span>-&gt;x = x;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">self</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line">-(<span class="keyword">id</span>) initWithX:(<span class="keyword">int</span>)x andY:(<span class="keyword">int</span>)y</div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span> (![<span class="keyword">self</span> initWithX:x])</div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span>;</div><div class="line">    <span class="keyword">self</span>-&gt;y = y;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">self</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line">-(<span class="keyword">id</span>) initWithX:(<span class="keyword">int</span>)x andY:(<span class="keyword">int</span>)y andZ:(<span class="keyword">int</span>)z</div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span> (![<span class="keyword">self</span> initWithX:x])</div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span>;</div><div class="line">    <span class="keyword">self</span>-&gt;y = y;</div><div class="line">    <span class="keyword">self</span>-&gt;z = z;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">self</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="初始化列表和实例数据的默认值"><a href="#初始化列表和实例数据的默认值" class="headerlink" title="初始化列表和实例数据的默认值"></a>初始化列表和实例数据的默认值</h2><p><code>Objective-C</code> 中不存在 <code>C++</code> 构造函数的初始化列表的概念。然而，不同于 <code>C++</code>，<code>Objective-C</code> 的alloc会将所有实例数据初始化成 <code>0</code>，因此指针也会被初始化成<code>nil</code>。<code>C++</code> 中，对象属性不同于指针，但是在 <code>Objective-C</code> 中，所有对象都被当做指针处理。</p>
+<h2 id="虚构造函数"><a href="#虚构造函数" class="headerlink" title="虚构造函数"></a>虚构造函数</h2><p><code>Objective-C</code> 中存在虚构造函数。我们将在后面的章节中详细讲诉这个问题。</p>
+<h2 id="类构造函数"><a href="#类构造函数" class="headerlink" title="类构造函数"></a>类构造函数</h2><p>在 <code>Objective-C</code> 中，类本身就是对象，因此它也有自己的构造函数，并且也能够被重定义。它显然是一个类函数，继承自NSObject，其原型是<code>+(void) initialize</code>;。</p>
+<p>第一次使用这个类或其子类的时候，这个函数将被自动调用。但这并不意味着，对于指定的类，这个函数只被调用一次。事实上，如果子类没有定义<code>+(void) initialize</code>;，那么 <code>Objective-C</code> 将调用其父类的<code>+(void) initialize</code>;。</p>
+<h2 id="析构函数"><a href="#析构函数" class="headerlink" title="析构函数"></a>析构函数</h2><p>在 <code>C++</code> 中，析构函数同构造函数一样，是一个特殊的函数。在 <code>Objective-C</code> 中，析构函数也是一个普通的实例函数，叫做<code>dealloc</code>。<code>C++</code> 中，当对象被释放时，析构函数将自动调用；<code>Objective-C</code> 也是类似的，但是释放对象的方式有所不同。</p>
+<p>析构函数永远不应该被显式调用。在 <code>C++</code> 中存在这么一种情况：开发者自己在析构时管理内存池。但是在 <code>Objective-C</code> 中没有这种限制。你可以在 <code>Cocoa</code> 中使用自定义的内存区域，但是这并不会影响平常的内存的分配、释放机制。</p>
+<p>C++</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">class</span> Point2D</div><div class="line">&#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    ~Point2D();</div><div class="line">&#125;;</div><div class="line"></div><div class="line">Point2D::~Point2D() &#123;&#125;</div></pre></td></tr></table></figure>
+<p>Objective-C</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">Point2D</span> : <span class="title">NSObject</span></span></div><div class="line">-(<span class="keyword">void</span>) dealloc; <span class="comment">// 该方法可以被重定义</span></div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">Point2D</span></span></div><div class="line"><span class="comment">// 在这个例子中，重定义并不需要</span></div><div class="line">-(<span class="keyword">void</span>) dealloc</div><div class="line">&#123;</div><div class="line">    [<span class="keyword">super</span> dealloc]; <span class="comment">// 不要忘记调用父类代码</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">@end</span></div></pre></td></tr></table></figure>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/hexo-blog/2015/12/01/2015-12-1-objc_实例化/#post-footer" class="postShorten-excerpt_link link">
+                                注释和共享
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/hexo-blog/2015/11/21/2015-11-21-about_this_blog/">
+                            关于Blog，我有话要说
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2015-11-21T12:00:00+08:00">
+	
+		    11月 21, 2015
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <h3 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h3><p>在某个无聊到蛋疼的晚上，在网上瞎逛，无意间接触到一个叫<code>jeklly</code>的技术，百度之。才发现原来一直关注的个人博客，好几个都是基于这个技术实现的，原来不知道，看到那些漂亮的个人博客网站都羡慕不已，先不看blog的内容写如何，单看到能开个人blog，就觉得博主好🐂（牛）。这个叫<code>jeklly</code>的，让我眼睛一亮，所以百度了一个晚上，找theme装环境……。最终fork了<a href="https://github.com/huxpro/huxpro.github.io/" target="_blank" rel="external">Hux</a>的theme，建了这个<a href="http://www.gitlee.com" target="_blank" rel="external"><strong>blog</strong>👉</a>。</p>
+<p>其实真的不难，有兴趣的朋友可以去折腾下，如果你会一点<code>前端</code>以及<code>git</code>的使用，那你可以很快速的完成blog的搭建，当然还要学习一下<code>Markdown</code>的语法，因为之后你要<code>发布</code>／<code>post</code>文章，需要用<code>markdown</code>语法编辑，然后再传到托管服务器的。</p>
+<h3 id="关于内容"><a href="#关于内容" class="headerlink" title="关于内容"></a>关于内容</h3><p>我要做什么呢？ 可以吐槽吗？ 可以当作一个公开的笔记本么？当然在外人眼里，或许觉得<code>blog</code>应该主要是分享吧，分享经验、感受等。对于技术<code>blog</code>更多的是要分享技术。嗯，应该是这样的！真的必须要这样❓</p>
+<p>NO！</p>
+<p>我的地盘我做主啊！！！ 哈哈哈😄</p>
+<h3 id="迷惑的"><a href="#迷惑的" class="headerlink" title="迷惑的"></a>迷惑的</h3><p>开了blog能坚持经常写博么，平时那么上班那么忙，下班还有时间去写blog？说实在，现在更多的是好奇吧，更有一点想炫耀的心里😄，至于后面如何，who care？</p>
+<p>好吧，我承认，开blog的动机不纯。</p>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/hexo-blog/2015/11/21/2015-11-21-about_this_blog/#post-footer" class="postShorten-excerpt_link link">
+                                注释和共享
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/hexo-blog/2015/06/15/Welcome-to-the-new-Tranquilpeak/">
+                            Welcome to Tranquilpeak 1.7
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2015-06-15T20:30:05+08:00">
+	
+		    6月 15, 2015
+    	
+    </time>
+    
+        <span>发布在 </span>
+        
+    <a class="category-link" href="/hexo-blog/categories/tranquilpeak/">tranquilpeak</a>, <a class="category-link" href="/hexo-blog/categories/tranquilpeak/releases/">releases</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt" itemprop="articleBody">
+                    <p>Tranquilpeak is a gorgeous responsive theme for Hexo blog framework. It has many features and integrated services to improve user experience.<br>
+                    
+                        <a href="/hexo-blog/2015/06/15/Welcome-to-the-new-Tranquilpeak/" class="postShorten-excerpt_link link">
+                            阅读全文
+                        </a>
+                        
+                    
+                </div>
+            
+        </div>
+        
+            <a href="/hexo-blog/2015/06/15/Welcome-to-the-new-Tranquilpeak/">
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" itemprop="image" src="http://d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city-750.jpg"/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
     <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
         <div class="postShorten-wrap">
             
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="http://www.hexo.io/">
-                            Hexo website
+                        <a class="link-unstyled" href="/hexo-blog/2015/05/28/Elements-showcase/">
+                            Elements showcase
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2012-04-12T23:33:26+08:00">
+    <time itemprop="datePublished" datetime="2015-05-28T20:30:05+08:00">
 	
-		    Apr 12, 2012
+		    5月 28, 2015
     	
     </time>
     
-        <span>in </span>
+        <span>发布在 </span>
         
     <a class="category-link" href="/hexo-blog/categories/tranquilpeak/">tranquilpeak</a>, <a class="category-link" href="/hexo-blog/categories/tranquilpeak/features/">features</a>
 
@@ -244,19 +440,314 @@
             </div>
             
                 <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>This is a link post. Clicking on the link should open <a href="http://www.hexo.io/">Hexo</a> in a new tab or window.<br>
+                    <p>Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It’s simple and elegant.<br>
                     
-                        <a href="http://www.hexo.io/" target="new" class="postShorten-excerpt_link link">
-                            Go to website
+                        <a href="/hexo-blog/2015/05/28/Elements-showcase/" class="postShorten-excerpt_link link">
+                            阅读全文
                         </a>
+                        
                     
                 </div>
             
         </div>
         
-            <a href="/hexo-blog/2012/04/12/link-post/">
+            <a href="/hexo-blog/2015/05/28/Elements-showcase/">
                 <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="http://d1u9biwaxjngwg.cloudfront.net/hexo-website/peak-140.jpg"/>
+                    <img alt="" itemprop="image" src="http://d1u9biwaxjngwg.cloudfront.net/elements-showcase/vintage-140.jpg"/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/hexo-blog/2015/05/13/Cover-image-showcase/">
+                            Cover image showcase
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2015-05-13T20:30:05+08:00">
+	
+		    5月 13, 2015
+    	
+    </time>
+    
+        <span>发布在 </span>
+        
+    <a class="category-link" href="/hexo-blog/categories/tranquilpeak/">tranquilpeak</a>, <a class="category-link" href="/hexo-blog/categories/tranquilpeak/features/">features</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt" itemprop="articleBody">
+                    <p>Tranquilpeak integrate a unique “cover image” feature. Open this post to see how this feature sublimate your article.<br>
+                    
+                        <a href="/hexo-blog/2015/05/13/Cover-image-showcase/" class="postShorten-excerpt_link link">
+                            阅读全文
+                        </a>
+                        
+                    
+                </div>
+            
+        </div>
+        
+            <a href="/hexo-blog/2015/05/13/Cover-image-showcase/">
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" itemprop="image" src="http://d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg"/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/hexo-blog/2015/03/23/highlighted-code-showcase/">
+                            highlighted code showcase
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2015-03-23T20:30:05+08:00">
+	
+		    3月 23, 2015
+    	
+    </time>
+    
+        <span>发布在 </span>
+        
+    <a class="category-link" href="/hexo-blog/categories/tranquilpeak/">tranquilpeak</a>, <a class="category-link" href="/hexo-blog/categories/tranquilpeak/features/">features</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt" itemprop="articleBody">
+                    <p>Tranquilpeak Hexo theme have its own theme to highlight source code. It’s based on GitHub theme: simple and elegant. Check out how it sublimate source codes.<br>
+                    
+                        <a href="/hexo-blog/2015/03/23/highlighted-code-showcase/" class="postShorten-excerpt_link link">
+                            阅读全文
+                        </a>
+                        
+                    
+                </div>
+            
+        </div>
+        
+            <a href="/hexo-blog/2015/03/23/highlighted-code-showcase/">
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" itemprop="image" src="http://d1u9biwaxjngwg.cloudfront.net/highlighted-code-showcase/peak-140.jpg"/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/hexo-blog/2014/10/29/Tags-plugins-showcase/">
+                            Tags plugins showcase
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2014-10-29T20:30:05+08:00">
+	
+		    10月 29, 2014
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt" itemprop="articleBody">
+                    <p>This post is used to show how tag plugins are displayed. See <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#tags">docs</a> for more info.<br>
+                    
+                        <a href="/hexo-blog/2014/10/29/Tags-plugins-showcase/" class="postShorten-excerpt_link link">
+                            阅读全文
+                        </a>
+                        
+                    
+                </div>
+            
+        </div>
+        
+            <a href="/hexo-blog/2014/10/29/Tags-plugins-showcase/">
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" itemprop="image" src="http://d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-6-140.jpg"/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/hexo-blog/2014/08/09/Video-integrations-showcase/">
+                            Video integrations showcase
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2014-08-09T20:30:05+08:00">
+	
+		    8月 09, 2014
+    	
+    </time>
+    
+        <span>发布在 </span>
+        
+    <a class="category-link" href="/hexo-blog/categories/tranquilpeak/">tranquilpeak</a>, <a class="category-link" href="/hexo-blog/categories/tranquilpeak/features/">features</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt" itemprop="articleBody">
+                    <p>Youtube and Vimeo videos are easily integrated thanks to tags plugins. Of course, you can add video other platforms like dailymotion.<br>
+                    
+                        <a href="/hexo-blog/2014/08/09/Video-integrations-showcase/" class="postShorten-excerpt_link link">
+                            阅读全文
+                        </a>
+                        
+                    
+                </div>
+            
+        </div>
+        
+            <a href="/hexo-blog/2014/08/09/Video-integrations-showcase/">
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" itemprop="image" src="http://d1u9biwaxjngwg.cloudfront.net/video-integration-showcase/peak-140.jpg"/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/hexo-blog/2013/10/02/中文測試/">
+                            中文測試
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2013-10-02T23:31:30+08:00">
+	
+		    10月 02, 2013
+    	
+    </time>
+    
+        <span>发布在 </span>
+        
+    <a class="category-link" href="/hexo-blog/categories/tranquilpeak/">tranquilpeak</a>, <a class="category-link" href="/hexo-blog/categories/tranquilpeak/features/">features</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt" itemprop="articleBody">
+                    <p>This is a chinese test post to show you how chinese is displayed.<br>
+                    
+                        <a href="/hexo-blog/2013/10/02/中文測試/" class="postShorten-excerpt_link link">
+                            阅读全文
+                        </a>
+                        
+                    
+                </div>
+            
+        </div>
+        
+            <a href="/hexo-blog/2013/10/02/中文測試/">
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" itemprop="image" src="http://d1u9biwaxjngwg.cloudfront.net/chinese-test-post/vintage-140.jpg"/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-right" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/hexo-blog/2013/02/18/Image-gallery-showcase/">
+                            Image gallery showcase
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2013-02-18T20:30:05+08:00">
+	
+		    2月 18, 2013
+    	
+    </time>
+    
+        <span>发布在 </span>
+        
+    <a class="category-link" href="/hexo-blog/categories/tranquilpeak/">tranquilpeak</a>, <a class="category-link" href="/hexo-blog/categories/tranquilpeak/features/">features</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt" itemprop="articleBody">
+                    <p>And here is the image gallery!<br>
+                    
+                        <a href="/hexo-blog/2013/02/18/Image-gallery-showcase/" class="postShorten-excerpt_link link">
+                            阅读全文
+                        </a>
+                        
+                    
+                </div>
+            
+        </div>
+        
+            <a href="/hexo-blog/2013/02/18/Image-gallery-showcase/">
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" itemprop="image" src="http://d1u9biwaxjngwg.cloudfront.net/image-gallery-showcase/city-140.jpg"/>
                 </div>
             </a>
             
@@ -271,12 +762,19 @@
                 <a class="btn btn--default btn--small" href="/hexo-blog/ ">
             
                 <i class="fa fa-angle-left text-base icon-mr"></i>
-                    <span>NEWER POSTS</span>
+                    <span>上一页</span>
             </a>
         </li>
         
         
-        <li class="pagination-number">page 2 of 2</li>
+        <li class="pagination-next">
+            <a class="btn btn--default btn--small" href="/hexo-blog/archives/page/3/">
+                    <span>下一页</span>
+                <i class="fa fa-angle-right text-base icon-ml"></i>
+            </a>
+        </li>
+        
+        <li class="pagination-number">第 2 页 共 3 页</li>
     </ul>
 </div>
 
@@ -304,18 +802,18 @@
             <i class="fa fa-remove"></i>
         </div>
         
-            <img id="about-card-picture" src="https://www.gravatar.com/avatar/a224ec725a8cdadb58ded94af558aa68?s=110" alt="Author&#39;s picture"/>
+            <img id="about-card-picture" src="https://www.gravatar.com/avatar/a224ec725a8cdadb58ded94af558aa68?s=110" alt="作者的图片"/>
         
             <h4 id="about-card-name">Gitlee</h4>
         
-            <div id="about-card-bio"><p>author.bio</p>
+            <div id="about-card-bio"><p>个人简介11岁的发送的发送地方</p>
 </div>
         
         
             <div id="about-card-job">
                 <i class="fa fa-briefcase"></i>
                 <br/>
-                <p>author.job</p>
+                <p>工作简介sdfasdf</p>
 
             </div>
         
@@ -345,7 +843,7 @@
             </form>
         </div>
         <div class="modal-body">
-            <div class="no-result text-color-light text-center">no post found</div>
+            <div class="no-result text-color-light text-center">没有找到文章</div>
             <div class="results">
                 
                 <div class="media">
@@ -363,7 +861,7 @@
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Apr 12, 2012
+                                    2012年4月12日
                                 
                             </span>
                         </span>
@@ -388,7 +886,7 @@
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Jan 2, 2013
+                                    2013年1月2日
                                 
                             </span>
                         </span>
@@ -413,7 +911,7 @@
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Feb 18, 2013
+                                    2013年2月18日
                                 
                             </span>
                         </span>
@@ -438,7 +936,7 @@
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Oct 2, 2013
+                                    2013年10月2日
                                 
                             </span>
                         </span>
@@ -463,7 +961,7 @@
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Aug 9, 2014
+                                    2014年8月9日
                                 
                             </span>
                         </span>
@@ -488,7 +986,7 @@
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Oct 29, 2014
+                                    2014年10月29日
                                 
                             </span>
                         </span>
@@ -513,7 +1011,7 @@
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Mar 23, 2015
+                                    2015年3月23日
                                 
                             </span>
                         </span>
@@ -538,7 +1036,7 @@
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    May 13, 2015
+                                    2015年5月13日
                                 
                             </span>
                         </span>
@@ -563,7 +1061,7 @@
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    May 28, 2015
+                                    2015年5月28日
                                 
                             </span>
                         </span>
@@ -588,7 +1086,7 @@
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Jun 15, 2015
+                                    2015年6月15日
                                 
                             </span>
                         </span>
@@ -602,10 +1100,10 @@
         </div>
         <div class="modal-footer">
             <p class="results-count text-medium"
-                data-message-zero="no post found"
-                data-message-one="1 post found"
-                data-message-other="{n} posts found">
-                11 posts found
+                data-message-zero="没有找到文章"
+                data-message-one="找到 1 篇文章"
+                data-message-other="找到 {n} 篇文章">
+                找到 22 篇文章
             </p>
         </div>
     </div>
